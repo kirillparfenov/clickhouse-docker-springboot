@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <typeHandlers>
+<!--        <typeHandler handler="common.db.UuidTypeHandler"/>-->
+<!--        <typeHandler handler="common.db.ArrayTypeHandler"/>-->
+<!--        <typeHandler handler="common.db.SetTypeHandler"/>-->
+<!--        <typeHandler handler="common.db.MapTypeHandler"/>-->
+<!--        <typeHandler handler="common.db.GeneratedPresetDtoTypeHandler"/>-->
+<!--        <typeHandler handler="common.db.PublicationFiltersTypeHandler"/>-->
+    </typeHandlers>
+
+    <mappers>
+        <mapper resource="mappers/ClickhouseTestMapper.xml"/>
+    </mappers>
+
+</configuration>

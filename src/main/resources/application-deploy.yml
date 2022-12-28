@@ -1,0 +1,4 @@
+datasource:
+  url: jdbc:clickhouse://${CLICK_HOST}/${CLICK_DB}
+  username: ${CLICK_USER}
+  password: ${CLICK_PASSWORD}

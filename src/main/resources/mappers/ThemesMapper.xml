@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ru.sbrf.rmc.feed.mappers.ThemesMapper">
+
+    <!--    sql columns -->
+
+    <!--    maps -->
+
+    <!--    queries -->
+
+    <insert id="insertThemeOwner" parameterType="map">
+        insert into theme_owner (
+            theme_id,
+            title,
+            user_id,
+            initials
+        ) values (
+            #{themeId},
+            #{title},
+            #{user.id},
+            #{user.initials}
+        );
+    </insert>
+
+    <select id="findThemesOwnedBy" parameterType="map" resultType="java.util.UUID">
+        select theme_id from theme_owner where user_id = #{accountId};
+    </select>
+
+</mapper>
