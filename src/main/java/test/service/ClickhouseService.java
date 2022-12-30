@@ -22,5 +22,7 @@ public class ClickhouseService {
     @EventListener(ApplicationReadyEvent.class)
     public void testSelect() {
         log.info("Тестовый запрос в клик: {}", clickhouseTestMapper.testSelect());
+
+
     }
 }

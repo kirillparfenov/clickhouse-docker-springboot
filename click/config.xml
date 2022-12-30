@@ -45,6 +45,27 @@
     <user_files_path>/var/lib/clickhouse/user_files/</user_files_path>
     <format_schema_path>/var/lib/clickhouse/format_schemas/</format_schema_path>
 
+    <!-- Настройка чтения топика -->
+    <kafka_clickhouse_topic>
+        <fetch_min_bytes>1000000</fetch_min_bytes>
+    </kafka_clickhouse_topic>
+
+<!--    <kafka_clickhouse_topic>-->
+<!--        <max_pool_records>100000</max_pool_records>-->
+<!--    </kafka_clickhouse_topic>-->
+
+<!--    <kafka_clickhouse_topic>-->
+<!--        <fetch_max_wait_ms>1000</fetch_max_wait_ms>-->
+<!--    </kafka_clickhouse_topic>-->
+
+<!--    <kafka_clickhouse_topic>-->
+<!--        <max_pool_interval>5000</max_pool_interval>-->
+<!--    </kafka_clickhouse_topic>-->
+
+<!--    <kafka_clickhouse_topic>-->
+<!--        <retry_backoff_ms>250</retry_backoff_ms>-->
+<!--    </kafka_clickhouse_topic>-->
+
     <user_directories>
         <users_xml>
             <path>users.xml</path>
@@ -53,6 +74,4 @@
             <path>/var/lib/clickhouse/access/</path>
         </local_directory>
     </user_directories>
-
-
 </clickhouse>
